@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="container h-screen">
+      <div className="container">
         <Routes>
           <Route path="/" Component={Home} exact />
           <Route path="/about" Component={About} exact />

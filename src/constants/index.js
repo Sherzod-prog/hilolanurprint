@@ -1,3 +1,12 @@
+import {
+  faCalendarDays,
+  faLayerGroup,
+  faMoneyCheckDollar,
+  faPaintBrush,
+  faPrint,
+  faShield,
+} from "@fortawesome/free-solid-svg-icons";
+
 export const navigation = [
   { name: "Главная", href: "/" },
   { name: "О Нас", href: "/about" },
@@ -10,37 +19,37 @@ export const services = [
     name: "Заказ любого объема",
     description:
       "Типография полного цикла предполагает изготовление заказа любого объема и сложности.",
-    icon: "",
+    icon: faLayerGroup,
   },
   {
     name: "Доступные цены",
     description:
       "Мы гарантируем высочайшее качество печати по доступным ценам.",
-    icon: "",
+    icon: faMoneyCheckDollar,
   },
   {
     name: "Соблюдение сроков сдачи",
     description:
       "Отлаженные процессы выполнения заказов гарантируют соблюдение оптимальных сроков.",
-    icon: "",
+    icon: faCalendarDays,
   },
   {
     name: "Различные виды печати",
     description:
       "Представляем цифровую печать, офсетную печать, широкоформатную печать и т.д.",
-    icon: "",
+    icon: faPrint,
   },
   {
     name: "Контроль качества",
     description:
       "На каждом этапе производства продукции специалисты тщательно следят за ее качеством.",
-    icon: "",
+    icon: faShield,
   },
   {
     name: "Собственная дизайн-студия",
     description:
       "Наши дизайнеры настоящие профессионалы, воплощающие Ваше видение в чудесные макеты.",
-    icon: "",
+    icon: faPaintBrush,
   },
 ];
 export const catalogs = [
@@ -62,4 +71,13 @@ export const catalogs = [
   { id: 16, catalog: "Постеры, плакаты" },
   { id: 17, catalog: "Пластиковые карточки" },
   { id: 18, catalog: "Другое" },
+];
+
+export const portfolio = [
+  { id: 1, img: "/src/assets/portfolio/1.jpg" },
+  { id: 2, img: "/src/assets/portfolio/2.jpg" },
+  { id: 3, img: "/src/assets/portfolio/3.jpg" },
+  { id: 4, img: "/src/assets/portfolio/4.jpg" },
+  { id: 5, img: "/src/assets/portfolio/5.jpg" },
+  { id: 6, img: "/src/assets/portfolio/6.jpg" },
 ];

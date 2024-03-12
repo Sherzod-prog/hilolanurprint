@@ -1,9 +1,10 @@
-import { catalogs, services } from "../../constants";
+import { catalogs, portfolio, services } from "../../constants";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   return (
     <>
-      <div className="container text-center">
+      <div className="text-center">
         <p className="text-yellow-400 font-bold tracking-[0.5em]">
           КОРОТКО О НАС
         </p>
@@ -15,37 +16,57 @@ export default function Home() {
           самых выгодных для клиента условиях.
         </p>
       </div>
-      <div>
+      <div className="grid grid-cols-3 gap-4 mt-3">
         {services.map((item) => (
-          <div key={item.name}>
-            <h3>{item.name}</h3>
+          <div className="border-l-2 border-b-2 p-4" key={item.name}>
+            <FontAwesomeIcon icon={item.icon} size="4x" color="orange" />
+            <h3 className="font-bold text-xl my-5">{item.name}</h3>
             <p>{item.description}</p>
           </div>
         ))}
       </div>
-      <div>
-        <h1>НАШИ ПРОДУКТЫ</h1>
-        <p>Что нужно заказать?</p>
+      <div className="text-center">
+        <button className="border-2 py-2 px-4 m-2 hover:bg-orange-500 hover:text-white rounded-lg">
+          О Компания
+        </button>
+      </div>
+      <div className="text-center">
+        <h1 className="text-yellow-400 font-bold tracking-[0.5em]">
+          НАШИ ПРОДУКТЫ
+        </h1>
+        <p className="font-bold text-3xl">Что нужно заказать?</p>
         <p>
           Мы работаем с высококачественной техникой от известных мировых
           производителей. Это позволяет нам производить качественную продукцию в
           максимально сжатые сроки, а Вам сэкономить время и деньги.
         </p>
-        {catalogs.map((i) => (
-          <button className="border-2 rounded-xl px-4 py-1 mx-4" key={i.id}>
-            {i.catalog}
-          </button>
-        ))}
+        <div className="grid grid-cols-3 gap-3">
+          {catalogs.map((i) => (
+            <button
+              key={i.id}
+              className="border-2 rounded-lg px-4 py-2 mx-4 hover:bg-orange-500 hover:text-white"
+            >
+              {i.catalog}
+            </button>
+          ))}
+        </div>
       </div>
-      <div>
-        <h1>ПОРТФОЛИО</h1>
-        <p>Примеры наших работ</p>
+      <div className="text-center">
+        <h1 className="text-yellow-400 font-bold tracking-[0.5em]">
+          ПОРТФОЛИО
+        </h1>
+        <p className="font-bold text-3xl">Примеры наших работ</p>
         <p>
           Наша фирма объединяет ведущих специалистов различных направлений
           рекламного бизнеса, способных решать различные задачи в области
           офсетной, цифровой и тампо-печати, графического дизайна, изготовлении
           нестандартных и комбинированных изделий.
         </p>
+      </div>
+      <div className="grid grid-cols-3 gap-3 place-items-center my-10">
+        {portfolio.map((i) => (
+          <img key={i.id} src={i.img} alt={i.id} width={300} height={300} />
+        ))}
       </div>
     </>
   );

@@ -9,6 +9,26 @@ export default function Footer() {
           Выбрав нас в качестве партнера, Вы на 100% будете довольны будущим
           результатом!
         </p>
+        <div className="flex justify-start gap-3">
+          <img
+            src="/src/assets/social/telegram.svg"
+            alt="1"
+            width={30}
+            height={30}
+          />
+          <img
+            src="/src/assets/social/facebook.svg"
+            alt="1"
+            width={30}
+            height={30}
+          />
+          <img
+            src="/src/assets/social/instagram.svg"
+            alt="1"
+            width={30}
+            height={30}
+          />
+        </div>
       </div>
       <div className="w-1/3">
         <ul className="mx-auto">
@@ -16,7 +36,7 @@ export default function Footer() {
             <li key={item.name}>
               <a
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900 py-1 hover:text-blue-600 hover:border-b-2"
+                className="text-sm font-bold leading-6 text-gray-900 py-1 hover:text-blue-600 hover:border-b-2"
               >
                 {item.name}
               </a>

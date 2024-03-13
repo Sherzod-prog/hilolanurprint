@@ -8,11 +8,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const navigation = [
-  { name: "Главная", href: "/" },
-  { name: "О Нас", href: "/about" },
-  { name: "Продукция", href: "/products" },
-  { name: "Наши услуги", href: "/services" },
-  { name: "Контакты", href: "/contacts" },
+  { name: "Главная", href: "/", icon: "/src/assets/angles-right.svg" },
+  { name: "О Нас", href: "/about", icon: "/src/assets/angles-right.svg" },
+  {
+    name: "Продукция",
+    href: "/products",
+    icon: "/src/assets/angles-right.svg",
+  },
+  {
+    name: "Наши услуги",
+    href: "/services",
+    icon: "/src/assets/angles-right.svg",
+  },
+  { name: "Контакты", href: "/contacts", icon: "/src/assets/angles-right.svg" },
 ];
 export const services = [
   {
@@ -80,4 +88,9 @@ export const portfolio = [
   { id: 4, img: "/src/assets/portfolio/4.jpg" },
   { id: 5, img: "/src/assets/portfolio/5.jpg" },
   { id: 6, img: "/src/assets/portfolio/6.jpg" },
+];
+export const socilaIcons = [
+  { id: 1, img: "/src/assets/social/facebook.svg" },
+  { id: 2, img: "/src/assets/social/instagram.svg" },
+  { id: 3, img: "/src/assets/social/telegram.svg" },
 ];

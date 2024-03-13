@@ -16,19 +16,21 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-1/3 pt-5 pb-10">
-        <ul className="mx-auto">
-          {navigation.map((item) => (
-            <li key={item.name} className="flex items-center">
-              <img src={item.icon} alt={item.name} width={15} height={15} />
-              <a
-                href={item.href}
-                className="text-sm font-bold leading-6 text-gray-900 py-1 hover:text-blue-600 hover:border-b-2 ml-1"
-              >
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="flex justify-center items-center">
+          <ul>
+            {navigation.map((item) => (
+              <li key={item.name} className="flex">
+                <img src={item.icon} alt={item.name} width={15} height={15} />
+                <a
+                  href={item.href}
+                  className="text-sm font-bold leading-6 text-gray-900 py-1 hover:text-blue-600 hover:border-b-2 ml-1"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div className="w-1/3 pt-5 pb-10">
         <b>Контакты</b>

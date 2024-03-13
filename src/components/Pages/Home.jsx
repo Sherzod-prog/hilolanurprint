@@ -18,7 +18,7 @@ export default function Home() {
           самых выгодных для клиента условиях.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-4 my-2">
+      <div className="grid grid-cols-3 gap-16 my-2">
         {services.map((item) => (
           <div className="border-l-2 border-b-2 p-4" key={item.name}>
             <FontAwesomeIcon icon={item.icon} size="4x" color="orange" />

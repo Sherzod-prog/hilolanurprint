@@ -12,7 +12,7 @@ export default function Services() {
         </p>
       </div>
       <div className="flex justify-center items-center my-10 border-2 p-4 bg-slate-200">
-        <img src="/src/assets/service/1.jpg" alt="" width={500} height={500} />
+        <img src="/service/1.jpg" alt="" width={500} height={500} />
       </div>
       <div className="my-10">
         <p className="my-3 font-bold">

@@ -8,19 +8,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const navigation = [
-  { name: "Главная", href: "/", icon: "/src/assets/angles-right.svg" },
-  { name: "О Нас", href: "/about", icon: "/src/assets/angles-right.svg" },
+  { name: "Главная", href: "/", icon: "/angles-right.svg" },
+  { name: "О Нас", href: "/about", icon: "/angles-right.svg" },
   {
     name: "Продукция",
     href: "/products",
-    icon: "/src/assets/angles-right.svg",
+    icon: "/angles-right.svg",
   },
   {
     name: "Наши услуги",
     href: "/services",
-    icon: "/src/assets/angles-right.svg",
+    icon: "/angles-right.svg",
   },
-  { name: "Контакты", href: "/contacts", icon: "/src/assets/angles-right.svg" },
+  { name: "Контакты", href: "/contacts", icon: "/angles-right.svg" },
 ];
 export const services = [
   {
@@ -82,15 +82,15 @@ export const catalogs = [
 ];
 
 export const portfolio = [
-  { id: 1, img: "/src/assets/portfolio/1.jpg" },
-  { id: 2, img: "/src/assets/portfolio/2.jpg" },
-  { id: 3, img: "/src/assets/portfolio/3.jpg" },
-  { id: 4, img: "/src/assets/portfolio/4.jpg" },
-  { id: 5, img: "/src/assets/portfolio/5.jpg" },
-  { id: 6, img: "/src/assets/portfolio/6.jpg" },
+  { id: 1, img: "/portfolio/1.jpg" },
+  { id: 2, img: "/portfolio/2.jpg" },
+  { id: 3, img: "/portfolio/3.jpg" },
+  { id: 4, img: "/portfolio/4.jpg" },
+  { id: 5, img: "/portfolio/5.jpg" },
+  { id: 6, img: "/portfolio/6.jpg" },
 ];
 export const socilaIcons = [
-  { id: 1, img: "/src/assets/social/facebook.svg" },
-  { id: 2, img: "/src/assets/social/instagram.svg" },
-  { id: 3, img: "/src/assets/social/telegram.svg" },
+  { id: 1, img: "/social/facebook.svg" },
+  { id: 2, img: "/social/instagram.svg" },
+  { id: 3, img: "/social/telegram.svg" },
 ];

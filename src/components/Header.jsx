@@ -7,7 +7,7 @@ export default function Header() {
         <a href="#" className="-m-1.5 p-1.5">
           <img
             className="h-8 w-auto sm:m-auto"
-            src="/assets/logo/hilola-02.png"
+            src="/logo/hilola-02.png"
             alt="logo"
           />
         </a>

@@ -12,7 +12,7 @@ export default function Header() {
           />
         </a>
       </div>
-      <ul className="lg:flex gap-x-10 items-center sm:inline sm:justify-center">
+      <ul className="lg:flex gap-x-10 items-center sm:inline sm:justify-center sm:mx-2 px-2">
         {navigation.map((item) => (
           <li key={item.name}>
             <a

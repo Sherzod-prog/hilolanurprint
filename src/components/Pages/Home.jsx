@@ -8,7 +8,7 @@ export default function Home() {
         <p className="text-yellow-400 font-bold tracking-[0.3em]">
           КОРОТКО О НАС
         </p>
-        <h1 className="font-bold text-3xl my-2">
+        <h1 className="font-bold lg:text-3xl md:text-2xl sm:text-xl my-2">
           Полиграфия безупречного качества
         </h1>
         <p>
@@ -21,8 +21,14 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-16 my-2">
         {services.map((item) => (
           <div className="border-l-2 border-b-2 p-4" key={item.name}>
-            <FontAwesomeIcon icon={item.icon} size="4x" color="orange" />
-            <h3 className="font-bold text-xl my-5">{item.name}</h3>
+            <FontAwesomeIcon
+              icon={item.icon}
+              className="lg:size-16 md:size-10 sm:size-8"
+              color="orange"
+            />
+            <h3 className="font-bold text-xl my-5 lg:text-3xl md:text-2xl sm:text-xl">
+              {item.name}
+            </h3>
             <p>{item.description}</p>
           </div>
         ))}
@@ -67,7 +73,12 @@ export default function Home() {
       </div>
       <div className="flex flex-wrap justify-center mx-auto gap-2 w-3/4 my-10">
         {portfolio.map((i) => (
-          <img key={i.id} src={i.img} alt={i.id} width={300} height={300} />
+          <img
+            key={i.id}
+            src={i.img}
+            alt={i.id}
+            className=" w-80 lg:w-72 md:w-64 sm:w-40"
+          />
         ))}
       </div>
     </>

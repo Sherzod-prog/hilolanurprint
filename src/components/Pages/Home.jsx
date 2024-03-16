@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <>
       <div className="text-center mt-10">
-        <p className="text-yellow-400 font-bold tracking-[0.3em]">
+        <p className="text-yellow-400 font-bold tracking-[0.2em]">
           КОРОТКО О НАС
         </p>
-        <h1 className="font-bold lg:text-3xl md:text-2xl sm:text-xl my-2">
+        <h1 className="font-bold text-3xl lg:text-3xl md:text-2xl sm:text-xl my-2">
           Полиграфия безупречного качества
         </h1>
         <p>
@@ -18,12 +18,12 @@ export default function Home() {
           самых выгодных для клиента условиях.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-16 my-2">
+      <div className="grid grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 gap-16 my-2">
         {services.map((item) => (
           <div className="border-l-2 border-b-2 p-4" key={item.name}>
             <FontAwesomeIcon
               icon={item.icon}
-              className="lg:size-16 md:size-10 sm:size-8"
+              className="size-16 lg:size-14 md:size-12 sm:size-10 xs:size-10"
               color="orange"
             />
             <h3 className="font-bold text-xl my-5 lg:text-3xl md:text-2xl sm:text-xl">
@@ -48,7 +48,7 @@ export default function Home() {
           производителей. Это позволяет нам производить качественную продукцию в
           максимально сжатые сроки, а Вам сэкономить время и деньги.
         </p>
-        <div className="grid grid-cols-3 gap-3 my-2">
+        <div className="grid grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 gap-3 my-2">
           {catalogs.map((i) => (
             <button
               key={i.id}

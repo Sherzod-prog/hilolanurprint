@@ -1,16 +1,12 @@
-import { catalogs, portfolio, services } from "../../constants";
+import { catalogs, htext, portfolio, ptext, services } from "../../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   return (
     <>
       <div className="text-center mt-10">
-        <p className="text-yellow-400 font-bold tracking-[0.2em]">
-          КОРОТКО О НАС
-        </p>
-        <h1 className="font-bold text-3xl lg:text-3xl md:text-2xl sm:text-xl my-2">
-          Полиграфия безупречного качества
-        </h1>
+        <p className={ptext}>КОРОТКО О НАС</p>
+        <h1 className={htext}>Полиграфия безупречного качества</h1>
         <p>
           Основным направлением деятельности нашей компании является оперативная
           цифровая и офсетная печать всех видов полиграфической продукции:
@@ -39,10 +35,8 @@ export default function Home() {
         </button>
       </div>
       <div className="text-center mt-10">
-        <h1 className="text-yellow-400 font-bold tracking-[0.3em]">
-          НАШИ ПРОДУКТЫ
-        </h1>
-        <p className="font-bold text-3xl my-2">Что нужно заказать?</p>
+        <h1 className={ptext}>НАШИ ПРОДУКТЫ</h1>
+        <p className={htext}>Что нужно заказать?</p>
         <p>
           Мы работаем с высококачественной техникой от известных мировых
           производителей. Это позволяет нам производить качественную продукцию в
@@ -54,16 +48,16 @@ export default function Home() {
               key={i.id}
               className="border-2 rounded-lg px-4 py-2 mx-4 hover:bg-orange-500 hover:text-white"
             >
-              {i.catalog}
+              <p className="hyphens-auto" lang="ru">
+                {i.catalog}
+              </p>
             </button>
           ))}
         </div>
       </div>
       <div className="text-center mt-10">
-        <h1 className="text-yellow-400 font-bold tracking-[0.3em]">
-          ПОРТФОЛИО
-        </h1>
-        <p className="font-bold text-3xl my-2">Примеры наших работ</p>
+        <h1 className={ptext}>ПОРТФОЛИО</h1>
+        <p className={htext}>Примеры наших работ</p>
         <p>
           Наша фирма объединяет ведущих специалистов различных направлений
           рекламного бизнеса, способных решать различные задачи в области

@@ -94,3 +94,7 @@ export const socilaIcons = [
   { id: 2, img: "/social/instagram.svg" },
   { id: 3, img: "/social/telegram.svg" },
 ];
+
+export const ptext = "text-yellow-400 text-2xl font-bold tracking-[0.2em]";
+export const htext =
+  "font-bold text-3xl md:text-2xl sm:text-xl xs:text-xl my-2";

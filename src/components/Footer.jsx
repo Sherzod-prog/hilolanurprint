@@ -2,8 +2,8 @@ import { navigation, socilaIcons } from "../constants";
 
 export default function Footer() {
   return (
-    <div className="container flex justify-center sm:inline xs:inline px-6 border-t-2 pt-2">
-      <div className="w-1/3 sm:w-full xs:w-full pt-5 pb-10">
+    <div className="container flex justify-center sm:inline xs:inline pt-4">
+      <div className="w-1/3 sm:w-full xs:w-full px-6 pb-4">
         <b>Print Media</b>
         <p>
           Выбрав нас в качестве партнера, Вы на 100% будете довольны будущим
@@ -15,8 +15,8 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="w-1/3 pt-5 pb-10 xs:hidden">
-        <div className="flex justify-center items-center">
+      <div className="w-1/3 sm:w-full xs:w-full px-6">
+        <div className="xl:flex xl:justify-center xl:items-center">
           <ul>
             {navigation.map((item) => (
               <li key={item.name} className="flex">
@@ -32,7 +32,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="w-1/3 sm:w-full xs:w-full pt-5 pb-10">
+      <div className="w-1/3 sm:w-full xs:w-full px-6 pt-4">
         <b>Контакты</b>
         <p>Ответ на вопросы и прием заказов по тел. в Ташкенте:</p>
         <a href="http://"></a>

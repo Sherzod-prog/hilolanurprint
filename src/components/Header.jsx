@@ -8,10 +8,10 @@ export default function Example() {
   const screenWidth = window.screen.width;
   console.log(screenWidth);
   return (
-    <div className="bg-white">
+    <div className="container">
       <header className="inset-x-0 top-0 z-50">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8 xl:px-8"
+          className="flex items-center justify-between p-4"
           aria-label="Global"
         >
           <div className="flex lg:flex-1 xl:flex-1">

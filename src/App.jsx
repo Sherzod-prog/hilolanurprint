@@ -10,7 +10,9 @@ function App() {
 
   return (
     <>
-      <Header />
+      <div className="border-b-2 bg-gradient-to-r from-cyan-100 to-blue-100">
+        <Header />
+      </div>
       <div className="container">
         <Routes>
           <Route path="/" Component={Home} exact />
@@ -20,7 +22,9 @@ function App() {
           <Route path="/contacts" Component={Contacts} exact />
         </Routes>
       </div>
-      <Footer />
+      <div className="border-t-2 bg-slate-50">
+        <Footer />
+      </div>
     </>
   );
 }

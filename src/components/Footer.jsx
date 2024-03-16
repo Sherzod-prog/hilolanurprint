@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="container flex justify-center sm:inline xs:inline pt-4">
       <div className="w-1/3 sm:w-full xs:w-full px-6 pb-4">
-        <b>Print Media</b>
+        <b>Hilola Nur Print</b>
         <p>
           Выбрав нас в качестве партнера, Вы на 100% будете довольны будущим
           результатом!

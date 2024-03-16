@@ -1,7 +1,7 @@
 export default function Services() {
   return (
     <>
-      <div>
+      <div className="px-4">
         <h3 className="text-3xl font-bold mb-5">Широкоформатная фотопечать</h3>
         <p>
           Исходя из самого названия, становится понятно, что широкоформатная
@@ -14,7 +14,7 @@ export default function Services() {
       <div className="flex justify-center items-center my-10 border-2 p-4 bg-slate-200">
         <img src="/service/1.jpg" alt="" width={500} height={500} />
       </div>
-      <div className="my-10">
+      <div className="my-10 px-4">
         <p className="my-3 font-bold">
           Предлагаем Вашему вниманию широкоформатную фотопечать:
         </p>

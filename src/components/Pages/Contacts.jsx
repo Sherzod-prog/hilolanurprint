@@ -3,7 +3,7 @@ import { socilaIcons } from "../../constants";
 export default function Contacts() {
   return (
     <div
-      className="flex justify-center mb-10
+      className="flex justify-center mb-10 lg:inline md:inline sm:inline xs:inline
     "
     >
       <div className="w-1/2">

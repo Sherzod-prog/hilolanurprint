@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <>
-      <h3 className="text-2xl font-bold my-3">
-        Мы рады приветствовать Вас на сайте компании Print Media!
+    <div className="px-4">
+      <h3 className="text-2xl font-bold my-3 ">
+        Мы рады приветствовать Вас на сайте компании Hilola Nur Print!
       </h3>
 
       <p className="mb-2">
@@ -13,7 +13,7 @@ export default function About() {
         сайты и т.д.)
       </p>
       <p className="my-5 font-bold">
-        Типография Print Media предоставляет Вам следующие услуги:
+        Типография Hilola Nur Print предоставляет Вам следующие услуги:
       </p>
       <p className="mb-2">
         <b>Цифровая печать</b> – самый быстрый способ печати. Главными
@@ -45,6 +45,6 @@ export default function About() {
         производить качественную продукцию в максимально сжатые сроки, а Вам
         сэкономить время и деньги.
       </p>
-    </>
+    </div>
   );
 }

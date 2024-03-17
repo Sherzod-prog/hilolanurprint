@@ -9,8 +9,8 @@ export default function Contacts() {
         <div className="flex sm:inline xs:inline my-5">
           <div className="w-1/2 sm:w-full xs:w-full">
             <h3 className={htext}>Телефоны:</h3>
-            <p>+998 (71) 233-03-21</p>
-            <p>+998 (71) 232-00-61</p>
+            <p>+998 (97) 000-00-00</p>
+            <p>+998 (97) 777-77-77</p>
           </div>
           <div className="w-1/2 sm:w-full xs:w-full">
             <h3 className={htext}>Email:</h3>

@@ -34,9 +34,13 @@ export default function Footer() {
       </div>
       <div className="w-1/3 sm:w-full xs:w-full px-6 pt-4">
         <b>Контакты</b>
-        <p>Ответ на вопросы и прием заказов по тел. в Ташкенте:</p>
-        <a href="http://"></a>
-        <a href="http://"></a>
+        <p>Ответ на вопросы и прием заказов по тел:</p>
+        <p className="font-semibold mt-2">
+          <a href="#">+998 97 000 00 00</a>
+        </p>
+        <p className="font-semibold">
+          <a href="#">+998 97 000 00 00</a>
+        </p>
       </div>
     </div>
   );

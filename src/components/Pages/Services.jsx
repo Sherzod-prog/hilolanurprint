@@ -1,8 +1,10 @@
+import { htext } from "../../constants";
+
 export default function Services() {
   return (
     <>
-      <div className="px-4">
-        <h3 className="text-3xl font-bold mb-5">Широкоформатная фотопечать</h3>
+      <div className="px-4 mt-10">
+        <h3 className={htext}>Широкоформатная фотопечать</h3>
         <p>
           Исходя из самого названия, становится понятно, что широкоформатная
           печать подразумевает печать на большом формате, форматы А1 и А2.Обычно
@@ -15,7 +17,7 @@ export default function Services() {
         <img src="/service/1.jpg" alt="" width={500} height={500} />
       </div>
       <div className="my-10 px-4">
-        <p className="my-3 font-bold">
+        <p className={htext}>
           Предлагаем Вашему вниманию широкоформатную фотопечать:
         </p>
         <ul className=" list-disc ml-5">

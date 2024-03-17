@@ -1,22 +1,19 @@
-import { socilaIcons } from "../../constants";
+import { htext, socilaIcons } from "../../constants";
 
 export default function Contacts() {
   return (
-    <div
-      className="flex justify-center mb-10 lg:inline md:inline sm:inline xs:inline
-    "
-    >
-      <div className="w-1/2">
-        <h3 className="text-3xl font-bold">Наш адрес:</h3>
+    <div className="flex justify-center mb-10 lg:inline md:inline sm:inline xs:inline">
+      <div className="w-1/2 lg:w-full md:w-full sm:w-full xs:w-full px-4">
+        <h3 className={htext}>Наш адрес:</h3>
         <p className="py-2">Узбекистан, Самарканд, ул.Самарканд , 50</p>
-        <div className="flex my-5">
-          <div className="w-1/2">
-            <h3 className="text-3xl font-bold mb-5">Телефоны:</h3>
+        <div className="flex sm:inline xs:inline my-5">
+          <div className="w-1/2 sm:w-full xs:w-full">
+            <h3 className={htext}>Телефоны:</h3>
             <p>+998 (71) 233-03-21</p>
             <p>+998 (71) 232-00-61</p>
           </div>
-          <div className="w-1/2">
-            <h3 className="text-3xl font-bold mb-5">Email:</h3>
+          <div className="w-1/2 sm:w-full xs:w-full">
+            <h3 className={htext}>Email:</h3>
             <ul>
               <li>sales@hilolanp.uz</li>
               <li>manager@hilolanp.uz</li>
@@ -27,11 +24,16 @@ export default function Contacts() {
         </div>
         <div className="flex gap-4 my-3">
           {socilaIcons.map((i) => (
-            <img key={i.id} src={i.img} alt={i.id} width={30} height={30} />
+            <img
+              key={i.id}
+              src={i.img}
+              alt={i.id}
+              className="w-8 h-8 md:w-6 md:h-6 sm:w-6 sm:h-6 xs:w-6 xs:h-6"
+            />
           ))}
         </div>
       </div>
-      <div>
+      <div className="px-4">
         <form className="w-full gap-4" action="">
           <input
             className="border border-black w-full p-2 my-2 "

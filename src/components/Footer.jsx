@@ -9,9 +9,9 @@ export default function Footer() {
           Выбрав нас в качестве партнера, Вы на 100% будете довольны будущим
           результатом!
         </p>
-        <div className="flex justify-start gap-3 py-2">
+        <div className="flex justify-start gap-2 py-2">
           {socilaIcons.map((s) => (
-            <img key={s.id} src={s.img} alt={s.id} width={30} height={30} />
+            <img key={s.id} src={s.img} alt={s.id} className="w-6 h-6" />
           ))}
         </div>
       </div>

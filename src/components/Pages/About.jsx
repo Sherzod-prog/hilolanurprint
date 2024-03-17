@@ -1,7 +1,8 @@
+import { ptext } from "../../constants";
 export default function About() {
   return (
     <div className="px-4">
-      <h3 className="text-2xl font-bold my-3 ">
+      <h3 className={ptext}>
         Мы рады приветствовать Вас на сайте компании Hilola Nur Print!
       </h3>
 

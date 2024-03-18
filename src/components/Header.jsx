@@ -5,8 +5,6 @@ import { navigation } from "../constants";
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const screenWidth = window.screen.width;
-  console.log(screenWidth);
   return (
     <div className="container">
       <header className="inset-x-0 top-0 z-50">
@@ -15,8 +13,8 @@ export default function Example() {
           aria-label="Global"
         >
           <div className="flex lg:flex-1 xl:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Hilola nur print</span>
               <img
                 className="h-8 w-auto"
                 src="/logo/hilola-02.png"
@@ -60,8 +58,8 @@ export default function Example() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+              <a href="/" className="-m-1.5 p-1.5">
+                <span className="sr-only">Hilola Nur Print</span>
                 <img
                   className="h-8 w-auto"
                   src="/logo/hilola-02.png"
@@ -106,35 +104,3 @@ export default function Example() {
     </div>
   );
 }
-
-// import { navigation } from "../constants";
-
-// export default function Header() {
-//   return (
-//     <header className="container lg:flex lg:justify-cente xs:m-auto grid grid-cols-6 gap-4 items-center">
-//       <div className="px-5 border-2 text-right col-start-1 col-end-3  ">
-//         <a href="#" className="-m-1.5 p-1.5">
-//           <img
-//             className="h-8 w-auto sm:m-auto"
-//             src="/logo/hilola-02.png"
-//             alt="logo"
-//           />
-//         </a>
-//       </div>
-//       <div className="col-end-7 col-span-2 justify-end w-full">
-//         <ul className="lg:flex gap-x-10 items-center sm:flex sm:justify-center sm:mx-2 px-2 xs:text-center">
-//           {navigation.map((item) => (
-//             <li key={item.name}>
-//               <a
-//                 href={item.href}
-//                 className="text-sm font-semibold leading-6 text-gray-900 py-1 hover:text-blue-600 hover:border-b-2"
-//               >
-//                 {item.name}
-//               </a>
-//             </li>
-//           ))}
-//         </ul>
-//       </div>
-//     </header>
-//   );
-// }

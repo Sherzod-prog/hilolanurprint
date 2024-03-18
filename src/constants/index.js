@@ -90,9 +90,10 @@ export const portfolio = [
   { id: 6, img: "/portfolio/6.jpg" },
 ];
 export const socilaIcons = [
-  { id: 1, img: "/social/facebook.svg" },
-  { id: 2, img: "/social/instagram.svg" },
-  { id: 3, img: "/social/telegram.svg" },
+  { id: 1, img: "/social/youtube.svg", url: "#" },
+  { id: 1, img: "/social/facebook.svg", url: "#" },
+  { id: 2, img: "/social/instagram.svg", url: "#" },
+  { id: 3, img: "/social/telegram.svg", url: "#" },
 ];
 
 export const ptext = "text-yellow-400 text-2xl font-bold tracking-[0.2em]";

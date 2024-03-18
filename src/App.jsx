@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="border-b-2 bg-gradient-to-r from-cyan-100 to-blue-100">
+      <div className="border-b-2 bg-gradient-to-r from-[#fb923c19] to-[#2ab40419]">
         <Header />
       </div>
       <div className="container">
@@ -22,7 +22,7 @@ function App() {
           <Route path="*" Component={NotFound} exact />
         </Routes>
       </div>
-      <div className="border-t-2 bg-slate-50">
+      <div className="border-t-2 bg-gradient-to-r from-[#fb923c19] to-[#2ab40419]">
         <Footer />
       </div>
     </>

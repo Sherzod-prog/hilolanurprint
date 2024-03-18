@@ -16,13 +16,17 @@ export default function Home() {
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 gap-16 my-2">
         {services.map((item) => (
-          <div className="border-l-2 border-b-2 p-4" key={item.name}>
+          <div
+            className="border-l-2 border-b-2 p-4 hyphens-auto"
+            lang="ru"
+            key={item.name}
+          >
             <FontAwesomeIcon
               icon={item.icon}
               className="size-16 lg:size-14 md:size-12 sm:size-10 xs:size-10"
-              color="orange"
+              color="#fb923c"
             />
-            <h3 className="font-bold text-xl my-5 lg:text-3xl md:text-2xl sm:text-xl">
+            <h3 className="font-bold text-2xl my-5 sm:text-lg xs:text-lg">
               {item.name}
             </h3>
             <p>{item.description}</p>
@@ -46,7 +50,7 @@ export default function Home() {
           {catalogs.map((i) => (
             <button
               key={i.id}
-              className="border-2 rounded-lg px-4 py-2 mx-4 hover:bg-orange-500 hover:text-white"
+              className="border-2 rounded-lg px-4 py-2 mx-4 hover:bg-orange-400 hover:text-white"
             >
               <p className="hyphens-auto" lang="ru">
                 {i.catalog}

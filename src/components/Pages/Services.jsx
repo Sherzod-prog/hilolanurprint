@@ -3,7 +3,7 @@ import { htext } from "../../constants";
 export default function Services() {
   return (
     <>
-      <div className="px-4 mt-10">
+      <div className="px-4 my-10">
         <h3 className={htext}>Широкоформатная фотопечать</h3>
         <p>
           Исходя из самого названия, становится понятно, что широкоформатная
@@ -13,14 +13,14 @@ export default function Services() {
           помощью принтера Epson с разрешением до 2880х1440 dpi.
         </p>
       </div>
-      <div className="flex justify-center items-center my-10 border-2 p-4 bg-slate-200">
-        <img src="/service/1.jpg" alt="" width={500} height={500} />
+      <div className="flex justify-center items-center my-10 p-4">
+        <img src="/service/11.png" alt="" width={520} height={520} />
       </div>
       <div className="my-10 px-4">
         <p className={htext}>
           Предлагаем Вашему вниманию широкоформатную фотопечать:
         </p>
-        <ul className=" list-disc ml-5">
+        <ul className="ml-8 text-justify list-disc">
           <li>На фотобумаге плотностью 260 г/м2</li>
           <li>
             На холсте, основным отличительным преимуществом перед другими типами

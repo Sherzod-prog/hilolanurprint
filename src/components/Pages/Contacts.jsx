@@ -23,7 +23,7 @@ export default function Contacts() {
               </ul>
             </div>
           </div>
-          <div className="flex gap-4 my-3">
+          <div className="flex gap-2 my-3">
             {socilaIcons.map((i) => (
               <a key={i.id} href={i.url}>
                 <img

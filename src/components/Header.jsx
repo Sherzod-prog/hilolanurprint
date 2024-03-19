@@ -5,7 +5,7 @@ import { navigation, options } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
-export default function Example({ theme, setTheme }) {
+export default function Header({ theme, setTheme }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (

@@ -1,10 +1,13 @@
 import {
   faCalendarDays,
+  faDesktop,
   faLayerGroup,
   faMoneyCheckDollar,
+  faMoon,
   faPaintBrush,
   faPrint,
   faShield,
+  faSun,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const navigation = [
@@ -95,6 +98,11 @@ export const socilaIcons = [
   { id: 1, img: "/social/facebook.svg", url: "#" },
   { id: 2, img: "/social/instagram.svg", url: "#" },
   { id: 3, img: "/social/telegram.svg", url: "#" },
+];
+export const options = [
+  { icon: faSun, text: "light" },
+  { icon: faMoon, text: "dark" },
+  { icon: faDesktop, text: "system" },
 ];
 
 export const ptext = "text-yellow-400 text-2xl font-bold tracking-[0.2em]";

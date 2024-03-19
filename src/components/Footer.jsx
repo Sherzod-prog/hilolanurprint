@@ -22,18 +22,11 @@ export default function Footer() {
           <ul>
             {navigation.map((item) => (
               <li key={item.name} className="flex">
-                <img
-                  src={item.icon}
-                  alt={item.name}
-                  width={15}
-                  height={15}
-                  className=" text-orange-300 "
-                />
                 <a
                   href={item.href}
-                  className="text-sm font-bold leading-6 text-gray-900 py-1 hover:text-blue-600 hover:border-b-2 ml-1"
+                  className="text-sm font-bold leading-6 py-1 hover:text-blue-600 hover:border-b-2 ml-1"
                 >
-                  {item.name}
+                  &#x27A2; {item.name}
                 </a>
               </li>
             ))}
